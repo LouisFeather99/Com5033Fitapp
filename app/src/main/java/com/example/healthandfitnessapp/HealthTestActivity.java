@@ -69,6 +69,13 @@ public class HealthTestActivity extends AppCompatActivity {
             }
         });
 
+        btnGoToCart.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                startActivity(new Intent(HealthTestActivity.this,CartTestActivity.class));
+            }
+        });
+
         list = new ArrayList();
         for(int i=0;i<packages.length;i++){
             item = new HashMap<String, String>();

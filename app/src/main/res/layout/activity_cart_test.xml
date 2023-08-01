@@ -17,7 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/listViewCart"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCartDatePicker"/>
+        app:layout_constraintTop_toBottomOf="@+id/buttonCartDate"/>
 
     <ListView
         android:id="@+id/listViewCart"
@@ -39,23 +39,23 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.00999999"/>
+        app:layout_constraintVertical_bias="0.032" />
+
     <TextView
         android:id="@+id/textView_logo8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="608dp"
         android:text="Deliver Location LEEDS"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf=""
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_logo4"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textViewCartTestTitle"
@@ -90,10 +90,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.808"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCartTimePicker"/>
+        app:layout_constraintTop_toBottomOf="@+id/buttonCartTime"/>
 
     <Button
-        android:id="@+id/buttonCartDatePicker"
+        android:id="@+id/buttonCartDate"
         style="=?android:spinnerStyle"
         android:layout_width="133dp"
         android:layout_height="42dp"
@@ -105,7 +105,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewCartTotalPrice"/>
 
     <Button
-       android:id="@+id/buttonCartTimePicker"
+       android:id="@+id/buttonCartTime"
        style="=?android:spinnerStyle"
        android:layout_width="133dp"
        android:layout_height="42dp"
@@ -123,7 +123,7 @@
         android:layout_height="wrap_content"
         android:text="Select Deliver Time"
         android:textColor="@color/yellowLight"
-        app:layout_constraintBottom_toTopOf="@+id/buttonCartDatePicker"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCartDate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.167"
         app:layout_constraintStart_toStartOf="parent"/>
@@ -133,7 +133,7 @@
         android:layout_height="wrap_content"
         android:text="Select Deliver Time"
         android:textColor="@color/yellowLight"
-        app:layout_constraintBottom_toTopOf="@+id/buttonCartTimePicker"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCartTime"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.804"
         app:layout_constraintStart_toStartOf="parent"/>
