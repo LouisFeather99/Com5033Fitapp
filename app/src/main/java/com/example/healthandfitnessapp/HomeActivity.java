@@ -20,8 +20,8 @@ public class HomeActivity extends AppCompatActivity {
 
 
         SharedPreferences sharedpreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
-        String username = sharedpreferences.getString("username", "").toString();
-        Toast.makeText(getApplicationContext(), "Welcome"+username,Toast.LENGTH_SHORT).show();
+        String username = sharedpreferences.getString("username", "" ).toString();
+        Toast.makeText(getApplicationContext(), "Welcome" + username, Toast.LENGTH_SHORT).show();
 
         CardView exit = findViewById(R.id.cardExit);
         exit.setOnClickListener(new View.OnClickListener() {
@@ -30,7 +30,7 @@ public class HomeActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor = sharedpreferences.edit();
                 editor.clear();
                 editor.apply();
-                startActivity(new Intent(HomeActivity.this,LoginActivity.class));
+                startActivity(new Intent(HomeActivity.this, LoginActivity.class));
             }
         });
 
@@ -38,7 +38,7 @@ public class HomeActivity extends AppCompatActivity {
         findTrainer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HomeActivity.this,FindTrainerActivity.class));
+                startActivity(new Intent(HomeActivity.this, FindTrainerActivity.class));
             }
         });
 
@@ -50,5 +50,26 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+
+        CardView orderdetails = findViewById(R.id.cardOrderDetails);
+        orderdetails.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this,OrderDetailsActivity.class));
+
+            }
+        });
+
+        CardView buySupplements = findViewById(R.id.cardBuySupplements);
+        buySupplements.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this,BuySupplementsActivity.class));
+
+            }
+        });
+
     }
+
 }
+
