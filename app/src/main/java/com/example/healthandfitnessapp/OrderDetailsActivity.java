@@ -38,7 +38,7 @@ public class OrderDetailsActivity extends AppCompatActivity {
             }
         });
 
-        Database db = new Database(getApplicationContext(),"healthcare",null,1);
+        DatabaseHelper db = new DatabaseHelper(getApplicationContext(),"healthcare",null,1);
         SharedPreferences sharedPreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
         String username = sharedPreferences.getString("username","").toString();
         ArrayList dbData = db.getOrderData(username);

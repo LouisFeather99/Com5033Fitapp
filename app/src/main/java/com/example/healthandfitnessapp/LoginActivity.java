@@ -36,7 +36,7 @@ public class LoginActivity extends AppCompatActivity {
                 //startActivity(new Intent(LoginActivity.this,HomeActivity.class));
                 String username = edUsername.getText().toString();
                 String password = edPassword.getText().toString();
-                Database db = new Database(getApplicationContext(),"healthcare", null, 1);
+                DatabaseHelper db = new DatabaseHelper(getApplicationContext(),"healthcare", null, 1);
                 if(username.length()==0 || password.length()==0){
                     Toast.makeText(getApplicationContext(),"Please fill ALL detail",Toast.LENGTH_SHORT).show();
                 }else{

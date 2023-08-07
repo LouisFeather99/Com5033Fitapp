@@ -6,7 +6,6 @@ import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -49,7 +48,7 @@ public class CartTestActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
         String username = sharedPreferences.getString("username","").toString();
 
-        Database db = new Database(getApplicationContext(),"healthcare",null,1);
+        DatabaseHelper db = new DatabaseHelper(getApplicationContext(),"healthcare",null,1);
 
         float totalAmount = 0;
         ArrayList dbData = db.getCartData(username,"lab");

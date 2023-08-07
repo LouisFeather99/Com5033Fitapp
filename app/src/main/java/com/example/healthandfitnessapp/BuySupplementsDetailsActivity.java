@@ -2,7 +2,6 @@ package com.example.healthandfitnessapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -51,7 +50,7 @@ public class BuySupplementsDetailsActivity extends AppCompatActivity {
                 String product = tvPackageName.getText().toString();
                 float price = Float.parseFloat(intent.getStringExtra("text3").toString());
 
-                Database db = new Database(getApplicationContext(),"healthcare", null,1);
+                DatabaseHelper db = new DatabaseHelper(getApplicationContext(),"healthcare", null,1);
 
                 if(db.checkCart(username,product)==1){
                     Toast.makeText(getApplicationContext(),"Product Already Added",Toast.LENGTH_SHORT).show();

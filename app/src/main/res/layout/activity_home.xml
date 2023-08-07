@@ -49,9 +49,9 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/home"/>
+                    android:layout_width="44dp"
+                    android:layout_height="53dp"
+                    android:src="@drawable/ic_baseline_medical_services_24" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -87,9 +87,9 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/home" />
+                    android:layout_width="54dp"
+                    android:layout_height="58dp"
+                    android:src="@drawable/ic_baseline_medication_24" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -124,9 +124,9 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/home"/>
+                    android:layout_width="53dp"
+                    android:layout_height="57dp"
+                    android:src="@drawable/ic_baseline_sports_gymnastics_24" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -160,9 +160,9 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/home"/>
+                    android:layout_width="60dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/ic_baseline_menu_book_24" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

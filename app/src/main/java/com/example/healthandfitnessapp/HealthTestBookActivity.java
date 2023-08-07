@@ -1,6 +1,5 @@
 package com.example.healthandfitnessapp;
 
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -37,7 +36,7 @@ public class HealthTestBookActivity extends AppCompatActivity {
                 SharedPreferences sharedpreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
                 String username = sharedpreferences.getString("username","").toString();
 
-                Database db = new Database(getApplicationContext(),"healthcare", null, 1);
+                DatabaseHelper db = new DatabaseHelper(getApplicationContext(),"healthcare", null, 1);
                 db.addOrder(username,edname.getText().toString(),edaddress.getText().toString(),edcontact.getText().toString(),Integer.parseInt(edpincode.getText().toString()),date.toString(),time.toString(),Float.parseFloat(price[1].toString()),"lab");
                 db.removeCart(username,"lab");
                 Toast.makeText(getApplicationContext(), "Your Booking Was Successfull", Toast.LENGTH_LONG).show();
